@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <title>html_2</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <logotohome>
+    <a href="index.html"><img src="images/0_XBlogo.png" alt=""></a>
+    </logotohome>
+
+    
+    <h1>1.サンプルをダウンロード</h1>
+        <h2>XBPのHPの構成</h2>
+        <div>
+            ブートキャンプで作成したホームディレクトリのXBPフォルダはこのような構造になっています。<br>
+            <img src="images/samplefolder1.png">
+                        
+            <br>デザイン演習Ⅰ・Ⅱの中を編集していきます。<br><br>
+        </div>
+       
+
+    <h1>２.テストページを編集してみる</h1>
+    <div>test.htmlを編集していきます</div>
+    <h2>①文字を書く</h2>
+        <div>
+            ■work1:test.htmlに文字を書いてみましょう。<br><br>
+            段落など、塊ごとにdivタグで括るようにして、文字を書いていきましょう。<br>
+            divはdivision（分割）の略です。
+            <xmp>
+                <div>
+                    ああああああ
+                </div>
+            </xmp>
+        </div>
+        <h2>②画像の挿入</h2>
+        <div>
+            ■work2:test.htmlにimagesフォルダにあるtest.pngを挿入してみましょう<br><br>
+            画像の表示にはimgタグを使います。（imageの略）<br>
+            imgタグのsrcという属性にファイルパスを記載します。(srcはsourceの略です)<br>
+            width属性は幅を設定します。%で指定するとスクリーンに対して何%の幅にするかを指定できます<br>
+            【書き方】
+            <xmp>
+                画像を表示(30%)<br>
+                <img src="images/image1.png" width="30%"><br>
+                画像を表示(40%)<br>
+                <img src="images/image2.png" width="40%"><br>
+            </xmp>
+
+        </div>
+        <div>
+        画像を表示(30%)<br>
+        <img src="images/image1.png" width="30%"><br>
+        画像を表示(40%)<br>
+        <img src="images/image2.png" width="40%"><br>
+        
+        </div>
+        <diV>
+            注意：携帯で撮影した写真はすごくサイズが大きいので今後写真をGitHubにプッシュする場合は写真のサイズを落としてください。<br>
+            Macでの写真サイズの変更方法(<a href="https://doyodoyo.github.io/doyolab/03photomemo.html">doyolab</a>)<br>
+            Windowsでの写真サイズの変更方法(<a href="https://office-hack.com/windows/windows10-image-resize/" target="_blank">外部サイト</a>)
+
+        </diV>
+
+        <h2>③箇条書き</h2>
+
+        <div>
+            ■work3:test.htmlに何か箇条書きをしてみましょう<br><br>
+            番号付きの箇条書きはolタグ(ordered listの略です)<br>
+            各項目はliタグで括ります（listの略です)<br>
+            【書き方】
+            <xmp>
+                <ol>
+                    <li>ああああああ</li>
+                    <li>いいいいいい</li>
+                </ol>
+            </xmp>
+            【結果】
+            <ol>
+                <li>ああああああ</li>
+                <li>いいいいいい</li>
+            </ol>
+        </div>
+        <div>
+            番号なしの箇条書きはulタグ(Unordered listの略です)
+            【書き方】
+            <xmp>
+                <ul>
+                    <li>あああああ</li>
+                    <li>いいいいいいい</li>
+                </ul>
+            </xmp>
+            【結果】
+            <ul>
+                <li>あああああ</li>
+                <li>いいいいいいい</li>
+            </ul>
+
+        </div>
+        <h2>④リンク</h2>
+        <div>
+            ■work4:test.htmlに外部サイトへのリンクを作成してみましょう。<br><br>
+            リンクを作りたい時はaタグを使います(Anchorの略です)<br>
+            href属性にリンク先を記載します(hypertext referenceの略です)<br>
+            target属性に_blankを設定すると新しいタブでリンクが開きます。設定しないと、同じタブ<br>
+            【書き方】
+            <xmp>
+                <a href="index.html">トップページへ</a><br>
+                <a href="https://www.yahoo.co.jp/" target="_blank">Yahoo</a>
+            </xmp>
+            【結果】<br>
+            <a href="index.html">トップページへ</a>→同じ階層（フォルダ）にあるindex.htmlに移動<br>
+            <a href="https://www.yahoo.co.jp/" target="_blank">Yahoo</a>→新しいタブでyahooを開く
+        </div>
+
+        <h2>⑤タイトル</h2>
+        <div>
+            ■work5:test.htmlのheadの部分のtitleを自分なりのタイトルに変更してみましょう。<br><br>
+            【書き方】
+            <xmp>
+                <title>XBPのページ</title>
+            </xmp>
+            【結果】
+            ブラウザのタブの表示を確認してください。
+        </div>
+
+        <h2>⑥スタイルシートの設定</h2>
+        <div>
+            ■work6:headの部分でcssフォルダにあるstyle.cssをスタイルシートに設定してみましょう。<br><br>
+            h1.htmlからある行をコピペしてくればOKです<br>
+            <br>cssファイルはhtmlのいろんな書式を決めておいて、それを読み込めばタグごとの書式が反映されるファイルです。
+            <br>スタイルシートの読み込みがうまくいけば、test.htmlの背景や右側の余白が整うはずです。
+            <br><br>
+            <xmp>
+                <link rel="stylesheet" href="css/style.css">
+            </xmp>
+            【結果】
+            背景や右側の余白が整うはずです。
+        </div>
+        <h2>宿題</h2>
+        <div>
+            次回授業までの宿題<br>
+            ■1.htmlというファイルを作ってください（test.htmlをコピーすると簡単です。)<br>
+            ■1.htmlに一回目の授業のポイントをできるだけ詳細にまとめてください。<br>
+            （やったことは必ず忘れるので、自分で見返してわかるように）<br>
+            ■de12フォルダの直下にあるindex.htmlの演習ノートの下に番号なし箇条書きで、「第1回」と記述し、1.htmlにリンクさせてください。<br>
+            ■GitHubにプッシュしてください。<br>
+            
+            完成イメージはこのような感じです。<br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/QmtEP_GOFp0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+        </div>
+
+
+    
+<br>
+<br>
+
+
+</body>
+</html>
